@@ -39,7 +39,7 @@ export const Main = styled.div`
   align-items: center;
   text-align: center;
   > a {
-    margin-top: 124px;
+    margin-top: 42px;
     color: ${({ theme }) => theme.COLORS.SALMON};
   }
 `;

@@ -12,9 +12,9 @@ export const Form = styled.form`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-
+  align-items: flex-start;
   text-align: center;
+
   > h1 {
     font-size: 48px;
     color: ${({ theme }) => theme.COLORS.SALMON};
@@ -30,9 +30,26 @@ export const Form = styled.form`
     font-size: 14px;
     color: ${({ theme }) => theme.COLORS.GRAY_100};
   }
+`;
+
+export const Main = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
   > a {
-    margin-top: 124px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 42px;
     color: ${({ theme }) => theme.COLORS.SALMON};
+    svg {
+      font-size: 16px;
+    }
   }
 `;
 
