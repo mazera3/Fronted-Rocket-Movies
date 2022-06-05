@@ -34,3 +34,7 @@
 - Perfil
 
   <img src="./img/movie03.jpg">
+
+- Meus Filmes
+
+  <img src="./img/movie04.jpg">

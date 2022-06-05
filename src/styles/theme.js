@@ -9,6 +9,7 @@ export default {
     SALMON_500: "hsla(349, 100%, 76%, 0.05)",
 
     GRAY_100: "#CAC4CF",
+    GRAY_200: "#999591",
     GRAY_300: "#948F99",
 
     RED: "#FF002E",

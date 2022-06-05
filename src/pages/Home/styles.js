@@ -8,44 +8,9 @@ export const Container = styled.div`
   display: grid;
   grid-template-rows: 123px auto;
   grid-template-areas:
-    "header" "header"
+    "header"
     "content";
   background-color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
-`;
-
-export const Brand = styled.div`
-  grid-area: brand;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: ${({ theme }) => theme.COLORS.BACKGROUND_700};
-
-  background-color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
-
-  > h1 {
-    font-size: 24px;
-    color: ${({ theme }) => theme.COLORS.SALMON};
-  }
-`;
-
-export const Menu = styled.ul`
-  grid-area: menu;
-  background-color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
-
-  padding-top: 64px;
-  text-align: center;
-  > li {
-    margin-bottom: 24px;
-  }
-`;
-
-export const Search = styled.div`
-  grid-area: search;
-  padding: 64px 64px 0;
 `;
 
 export const Content = styled.div`
@@ -55,13 +20,18 @@ export const Content = styled.div`
 `;
 
 export const NewNotes = styled(Link)`
-  grid-area: newnote;
   background-color: ${({ theme }) => theme.COLORS.SALMON};
   color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
+  border-radius: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 8px;
+  height: 48px;
+  width: 207px;
   > svg {
-    margin-right: 8px;
+    margin: 8px;
+    width: 20px;
+    height: 20px;
   }
 `;

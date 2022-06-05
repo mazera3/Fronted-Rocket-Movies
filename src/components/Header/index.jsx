@@ -1,16 +1,17 @@
-import { Container, Profile, Logout } from "./styles";
-import { Section } from "../Section";
+import { Container, Profile, Form } from "./styles";
 import { Input } from "../Input";
 
 export function Header() {
   return (
     <Container>
-      <Section title="RocketMovies" />
-      <Input placeholder="Pesquisar pelo título" />
+      <h2>RocketMovies</h2>
+      <Form>
+        <Input placeholder="Pesquisar pelo título" />
+      </Form>
       <Profile to="/profile">
         <div>
           <strong>Édio Mazera</strong>
-          <p>Sair</p>
+          <span>sair</span>
         </div>
         <img src="https://github.com/mazera3.png" alt="Foto do Usuário" />
       </Profile>

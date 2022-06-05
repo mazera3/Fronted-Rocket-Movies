@@ -17,6 +17,26 @@ export const Container = styled.button`
     font-size: 24px;
     color: ${({ theme }) => theme.COLORS.WHITE};
   }
+  > span {
+    display: flex;
+  }
+  > p {
+    font-size: 16px;
+    color: ${({ theme }) => theme.COLORS.GRAY_200};
+    text-align: justify;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+  svg {
+    margin: 15px 3px;
+    width: 12px;
+    height: 12px;
+    color: ${({ theme }) => theme.COLORS.SALMON};
+    fill: ${({ theme }) => theme.COLORS.SALMON};
+  }
   > footer {
     width: 100%;
     display: flex;
