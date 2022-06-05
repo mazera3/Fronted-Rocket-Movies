@@ -30,3 +30,7 @@
 - Criar sua conta
 
   <img src="./img/movie02.jpg">
+
+- Perfil
+
+  <img src="./img/movie03.jpg">

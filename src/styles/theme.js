@@ -6,6 +6,7 @@ export default {
 
     WHITE: "#FFFFFF",
     SALMON: "#FF859B",
+    SALMON_500: "hsla(349, 100%, 76%, 0.05)",
 
     GRAY_100: "#CAC4CF",
     GRAY_300: "#948F99",

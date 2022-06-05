@@ -1,19 +1,19 @@
-import { RiShutDownLine } from "react-icons/ri";
 import { Container, Profile, Logout } from "./styles";
+import { Section } from "../Section";
+import { Input } from "../Input";
 
 export function Header() {
   return (
     <Container>
+      <Section title="RocketMovies" />
+      <Input placeholder="Pesquisar pelo título" />
       <Profile to="/profile">
-        <img src="https://github.com/mazera3.png" alt="Foto do Usuário" />
         <div>
-          <span>Bem-vindo</span>
           <strong>Édio Mazera</strong>
+          <p>Sair</p>
         </div>
+        <img src="https://github.com/mazera3.png" alt="Foto do Usuário" />
       </Profile>
-      <Logout>
-        <RiShutDownLine />
-      </Logout>
     </Container>
   );
 }

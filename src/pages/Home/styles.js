@@ -6,13 +6,10 @@ export const Container = styled.div`
   height: 100vh;
 
   display: grid;
-  grid-template-columns: 250px auto;
-  grid-template-rows: 105px 128px auto 64px;
+  grid-template-rows: 123px auto;
   grid-template-areas:
-    "brand header"
-    "menu search"
-    "menu content"
-    "newnote content";
+    "header" "header"
+    "content";
   background-color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
 `;
 
