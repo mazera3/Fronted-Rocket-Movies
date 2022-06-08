@@ -12,7 +12,8 @@ export const Container = styled.header`
   border-bottom-color: ${({ theme }) => theme.COLORS.BACKGROUND_700};
 
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  justify-content: center;
   padding: 0 80px;
   gap: 64px;
   > h2 {
@@ -32,11 +33,11 @@ export const Profile = styled(Link)`
     border-radius: 50%;
   }
   > div {
-    width: 198px;
+    /* width: 198px; */
+    width: auto;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    margin-left: 16px;
     line-height: 24px;
     span {
       font-size: 14px;

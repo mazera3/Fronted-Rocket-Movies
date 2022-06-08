@@ -13,13 +13,15 @@ export const Container = styled.div`
   margin-bottom: 8px;
   border-radius: 10px;
   padding-right: 16px;
+  width: auto;
 
   > button {
     border: none;
     background: none;
+    font-size: 22px;
   }
   .button-delete {
-    color: ${({ theme }) => theme.COLORS.RED};
+    color: ${({ theme }) => theme.COLORS.SALMON};
   }
 
   .button-add {

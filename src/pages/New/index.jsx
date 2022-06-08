@@ -1,3 +1,4 @@
+import { FiArrowLeft } from "react-icons/fi";
 import { Container, Form } from "./styles";
 import { Header } from "../../components/Header";
 import { Input } from "../../components/Input";
@@ -14,23 +15,28 @@ export function New() {
       <main>
         <Form>
           <header>
-            <h1>Criar nota</h1>
-            <Link to="/">voltar</Link>
+            <h1>Novo filme</h1>
+            <Link to="/">
+              <FiArrowLeft />
+              voltar
+            </Link>
           </header>
-          <Input placeholder="Titulo" />
+          <div className="titulo">
+            <Input placeholder="Titulo" />
+            <Input placeholder="Sua nota (de 0 a 5)" />
+          </div>
           <Textarea placeholder="Observações" />
-          <Section title="Links úteis">
-            <NoteItem value="https://rocketseat.com.br" />
-            <NoteItem isNew placeholder="Novo link" />
-          </Section>
 
           <Section title="Marcadores">
             <div className="tags">
-              <NoteItem value="react" />
-              <NoteItem isNew placeholder="Nova tag" />
+              <NoteItem value="React" />
+              <NoteItem isNew placeholder="Novo marcador" />
             </div>
           </Section>
-          <Button title="Salvar" />
+          <div className="button">
+            <Button title="Excluir filme" />
+            <Button title="Salvar alterações" />
+          </div>
         </Form>
       </main>
     </Container>

@@ -38,3 +38,7 @@
 - Meus Filmes
 
   <img src="./img/movie04.jpg">
+
+- Novo Filme
+
+  <img src="./img/movie05.jpg">
