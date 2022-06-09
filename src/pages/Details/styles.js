@@ -1,4 +1,3 @@
-// styled-react
 import styled from "styled-components";
 
 export const Container = styled.div`
@@ -13,39 +12,46 @@ export const Container = styled.div`
 
   > main {
     grid-area: content;
-    overflow-y: scroll;
-    padding: 64px 0;
-  }
-`;
-
-export const Links = styled.ul`
-  list-style: none;
-  > li {
-    margin-top: 12px;
-    a {
-      color: ${({ theme }) => theme.COLORS.WHITE};
-    }
+    overflow-y: auto;
   }
 `;
 
 export const Content = styled.div`
-  max-width: 550px;
+  max-width: 1137px;
   margin: 0 auto;
+  padding: 0px;
 
   display: flex;
   flex-direction: column;
-  > button:first-child {
-    align-self: end;
+  section {
+    > a {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: ${({ theme }) => theme.COLORS.SALMON};
+      margin: 0 24px auto;
+    }
   }
-  > h1 {
-    font-size: 36px;
-    font-weight: 500;
-    padding-top: 64px;
-    //color: ${({ theme }) => theme.COLORS.WHITE};
-  }
-  > p {
-    font-size: 16px;
-    margin-top: 16px;
-    text-align: justify;
+  .user {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: left;
+    gap: 10px;
+    margin: 0 24px auto;
+
+    > img {
+      border-radius: 50%;
+      width: 16px;
+      height: 16px;
+    }
+    > span {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      svg {
+        color: ${({ theme }) => theme.COLORS.SALMON};
+      }
+    }
   }
 `;

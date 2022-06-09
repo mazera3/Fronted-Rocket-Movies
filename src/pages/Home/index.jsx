@@ -12,6 +12,9 @@ export function Home() {
     <Container>
       <Header />
       <Content>
+        <button>
+          <a href="/details/:1">Detalhes</a>
+        </button>
         <Section
           title="Meus filmes"
           button={

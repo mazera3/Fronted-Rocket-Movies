@@ -42,3 +42,7 @@
 - Novo Filme
 
   <img src="./img/movie05.jpg">
+
+- Detalhes
+
+  <img src="./img/movie06.jpg">
